@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+header {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    gap: 20px;
+    height: 80px;
+    padding: 20px;
+    
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 4px;
+}
+.container{
+   padding: 40;
+   margin: 0 auto;
+   width: 1200px;
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   
+}
+
+.trip-container {
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    gap: 8px;
+    
+}
+
+.trip-card {
+    width: 250px;
+    height: 70px;
+    background-color: tan;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+    
+}
+
+.trip-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trip-options {
+    display: flex;
+    gap: 8px;
+    border: 2px black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin: 8px;
+    width: 300px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+    border: 2px black;
+}
+
+input {
+    height: 28px;
+    width: 250px;
+    border: 2px black;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+    border: 2px black;
+}
+
+button {
+    height: 30px;
+    min-width: 150px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: brown;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div {
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+button:hover {
+    background-color: tan;
+    color: white;
+}
+
+@media (max-width: 750px) {
+    header {
+        background-color: orange;
+    }
+}
+#calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    gap: 3px;
+    align-items: right;
+}
+.day{
+    width: 100px;
+    height: 100px;
+    padding: 1px;
+    background-color: brown;
+    border-radius: 3px;
+    transition: all 250ms;
+}
+
+.day:hover{
+    background-color: tan;
+    
+}
+.day-number{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+button.navigation{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 250ms;
+}
+h3{
+    font-size: 15px;
+}
+img{
+    width: 50%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 3px 3px 3px 3px;
+    align-items: center;
+    display: inline;
+    position: relative;
+    right: -450px;
+    top: -200px;
+}
+
